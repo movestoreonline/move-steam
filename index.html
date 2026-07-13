@@ -11,6 +11,35 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
+.banner{
+    width:100%;
+    border-radius:22px;
+    margin-bottom:35px;
+    transition:0.35s ease;
+    box-shadow:0 0 20px rgba(0,120,255,.18);
+}
+
+.banner:hover{
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 0 35px rgba(0,120,255,.55);
+}
+
+.section-title{
+    color:#ffffff;
+    font-size:24px;
+    font-weight:bold;
+    margin:25px 0 15px;
+}
+
+.footer{
+    margin-top:40px;
+    color:#8ea2c8;
+    font-size:15px;
+}
+
+.footer span{
+    color:#2d8cff;
+    font-weight:bold;
 }
 
 body{
@@ -23,7 +52,7 @@ height:100vh;
 
 .container{
 width:90%;
-max-width:500px;
+max-width:900px;
 text-align:center;
 }
 
@@ -80,13 +109,26 @@ font-size:15px;
 اختر نوع حساب Steam
 </div>
 
+<div class="section-title">
+🎮 Steam Online
+</div>
+
 <a href="https://salla.sa/movestore/steam-online/c25323818" target="_blank">
-    <img src="online.png" alt="Steam Online" style="width:100%;border-radius:20px;margin-bottom:20px;">
+    <img src="online.png" class="banner">
 </a>
 
+<div class="section-title">
+💿 Steam Offline
+</div>
+
 <a href="https://salla.sa/movestore/steam-offline/c758486836" target="_blank">
-    <img src="offline.png" alt="Steam Offline" style="width:100%;border-radius:20px;">
+    <img src="offline.png" class="banner">
 </a>
+
+<div class="footer">
+© 2026 <span>MOVE STORE</span><br>
+أفضل متجر للحسابات والألعاب الرقمية
+</div>
 
 </div>
 
