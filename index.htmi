@@ -3,55 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MOVE Steam</title>
+<title>MOVE | Steam</title>
+
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-background:#0f172a;
+}
+
+body{
+background:#0b1220;
 display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
-color:#fff;
 }
+
 .container{
-text-align:center;
 width:90%;
 max-width:500px;
+text-align:center;
 }
-h1{
-margin-bottom:40px;
-}
-a{
-display:block;
-background:#2563eb;
+
+.logo{
 color:#fff;
-text-decoration:none;
-padding:20px;
-margin:20px 0;
-border-radius:15px;
-font-size:22px;
+font-size:38px;
 font-weight:bold;
-transition:.3s;
+margin-bottom:10px;
 }
-a:hover{
-background:#1d4ed8;
-transform:scale(1.03);
+
+.desc{
+color:#9ca3af;
+margin-bottom:40px;
+font-size:18px;
+}
+
+.card{
+display:block;
+text-decoration:none;
+background:#111827;
+color:#fff;
+padding:22px;
+margin:18px 0;
+border-radius:18px;
+border:1px solid #2563eb;
+transition:.25s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+background:#1e293b;
+}
+
+.card h2{
+font-size:28px;
+margin-bottom:8px;
+}
+
+.card p{
+color:#cbd5e1;
+font-size:15px;
 }
 </style>
+
 </head>
+
 <body>
 
 <div class="container">
-<h1>🎮 اختر القسم</h1>
 
-<a href="https://ضع-رابط-تصنيف-الاونلاين-هنا">
-🎮 Steam Online
+<div class="logo">MOVE</div>
+
+<div class="desc">
+اختر نوع حساب Steam
+</div>
+
+<a class="card" href="رابط-قسم-الاونلاين">
+<h2>🎮 Steam Online</h2>
+<p>عرض جميع الحسابات الأونلاين</p>
 </a>
 
-<a href="https://ضع-رابط-تصنيف-الاوفلاين-هنا">
-💿 Steam Offline
+<a class="card" href="رابط-قسم-الاوفلاين">
+<h2>💿 Steam Offline</h2>
+<p>عرض جميع الحسابات الأوفلاين</p>
 </a>
 
 </div>
