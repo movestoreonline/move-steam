@@ -16,8 +16,7 @@
 
 body{
     background:#0b1220;
-    background-image:
-    radial-gradient(circle at top,#143b7d33 0%,transparent 40%);
+    background-image:radial-gradient(circle at top,#143b7d33 0%,transparent 40%);
     color:#fff;
     display:flex;
     justify-content:center;
@@ -30,22 +29,40 @@ body{
     text-align:center;
 }
 
+/* اللوقو */
+
 .logo{
-    margin-bottom:18px;
+    margin-bottom:15px;
+    font-size:62px;
+    font-weight:900;
+    line-height:1;
+    letter-spacing:2px;
 }
 
-.logo img{
-    width:160px;
-    height:auto;
-    display:block;
-    margin:auto;
+.logo .en{
+    color:#ffffff;
 }
+
+.logo .line{
+    color:#2d8cff;
+    margin:0 10px;
+}
+
+.logo .ar{
+    color:#2d8cff;
+    font-size:46px;
+    font-weight:800;
+}
+
+/* الوصف */
 
 .desc{
     color:#9ca3af;
-    font-size:18px;
+    font-size:19px;
     margin-bottom:45px;
 }
+
+/* البنرات */
 
 .banner{
     display:block;
@@ -67,8 +84,10 @@ body{
     box-shadow:0 0 35px rgba(0,132,255,.55);
 }
 
+/* الفوتر */
+
 .footer{
-    margin-top:30px;
+    margin-top:35px;
     color:#7d8aa5;
     font-size:15px;
 }
@@ -78,18 +97,38 @@ body{
     font-weight:bold;
 }
 
-@media(max-width:768px){
+/* الجوال */
+
+@media (max-width:768px){
+
+body{
+    padding:40px 15px;
+}
 
 .logo{
-    font-size:38px;
+    font-size:42px;
+}
+
+.logo .ar{
+    font-size:30px;
+}
+
+.logo .line{
+    margin:0 6px;
 }
 
 .desc{
-    font-size:16px;
+    font-size:17px;
+    margin-bottom:30px;
 }
 
 .banner{
+    border-radius:18px;
     margin-bottom:22px;
+}
+
+.footer{
+    font-size:14px;
 }
 
 }
@@ -101,7 +140,11 @@ body{
 
 <div class="container">
 
-<div class="logo">MOVE | موف</div>
+<div class="logo">
+    <span class="en">MOVE</span>
+    <span class="line">|</span>
+    <span class="ar">موف</span>
+</div>
 
 <div class="desc">
 اختر نوع حساب Steam
@@ -124,4 +167,3 @@ body{
 
 </body>
 </html>
-
