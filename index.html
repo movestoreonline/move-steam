@@ -151,7 +151,6 @@ bottom: -450px;
     opacity: .55;
     z-index: 1;
 }
-}
 .background{
 
 position:fixed;
@@ -226,44 +225,52 @@ font-size:15px;
 }
 .footer span{color:#2d8cff;font-weight:bold;}
 
-@media(max-width:768px){
-body{padding:40px 15px;}
-.logo img{width:90px;height:90px;}
-.desc{font-size:17px;margin-bottom:30px;}
-.banner{border-radius:18px;margin-bottom:22px;}
-.footer{font-size:14px;}
-.side,.particles{display:none;}
+@media (max-width:768px){
+
+    body{
+        padding:30px 12px;
+        background-attachment:scroll;
+    }
+
+    /* إخفاء الشخصيات */
+    .side,
+    .left-character,
+    .right-character{
+        display:none !important;
+    }
+
+    /* إخفاء النجوم */
+    .particles{
+        display:none !important;
+    }
+
+    /* تبسيط الخلفية */
+    .background{
+        animation:none;
+    }
+
+    /* إزالة الظلال الثقيلة */
+    .banner{
+        box-shadow:none;
+    }
+
+    .banner:hover{
+        transform:none;
+        box-shadow:none;
+    }
+
+    .logo img{
+        width:90px;
+        height:90px;
+        box-shadow:none;
+    }
+
+    .desc{
+        font-size:17px;
+        margin-bottom:25px;
+    }
+
+    .footer{
+        font-size:14px;
+    }
 }
-</style>
-</head>
-<body>
-
-<div class="background"></div>
-
-<div class="particles"></div>
-
-<img src="ghost (2).png" class="side left-character" alt="Ghost">
-<img src="leon2.png" class="side right-character" alt="Leon">
-
-<div class="container">
-<div class="logo">
-<img src="logo.png" alt="MOVE Logo">
-</div>
-
-<div class="desc">اختر نوع حساب Steam</div>
-
-<a class="banner" href="https://salla.sa/movestore/steam-online/c25323818" target="_blank">
-<img src="online.png" alt="Steam Online">
-</a>
-
-<a class="banner" href="https://salla.sa/movestore/steam-offline/c758486836" target="_blank">
-<img src="offline.png" alt="Steam Offline">
-</a>
-
-<div class="footer">
-© 2026 <span>MOVE STORE</span><br>
-أفضل متجر للحسابات والألعاب الرقمية
-</div>
-</div>
-</body>
-</html>
